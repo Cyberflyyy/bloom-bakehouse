@@ -1,0 +1,125 @@
+{
+  "theme": {
+    "primary": "#1B4332",
+    "accent": "#52A37C",
+    "bg": "#FFFFFF",
+    "text": "#1F2823",
+    "muted": "#6B7870",
+    "displayFont": "Plus Jakarta Sans",
+    "bodyFont": "Inter",
+    "radius": "16px",
+    "spacing": "normal"
+  },
+  "sections": [
+    {
+      "type": "Navbar",
+      "props": {
+        "layout": "left-logo",
+        "behavior": "sticky",
+        "cta": "button",
+        "name": "Centrum Medyczne Vita",
+        "links": ["O klinice", "Specjalizacje", "Zespół", "Kontakt"]
+      }
+    },
+    {
+      "type": "Hero",
+      "props": {
+        "layout": "right-text",
+        "mediaType": "photo",
+        "height": "tall",
+        "ctaStyle": "solid",
+        "accent": "badge",
+        "title": "Twoje zdrowie w dobrych rękach",
+        "subtitle": "Nowoczesna diagnostyka i opieka specjalistyczna w przyjaznej, kameralnej atmosferze.",
+        "ctaText": "Umów wizytę online",
+        "ctaHref": "#kontakt",
+        "bgImage": "/img/hero.jpg",
+        "badge": "Ponad 15 lat doświadczenia"
+      }
+    },
+    {
+      "type": "About",
+      "props": {
+        "layout": "centered-narrow",
+        "imageStyle": "none",
+        "heading": "Opieka, której możesz zaufać",
+        "body": "Łączymy nowoczesną diagnostykę z indywidualnym podejściem do pacjenta. Nasz zespół specjalistów dba o to, by każda wizyta była profesjonalna, spokojna i pozbawiona stresu.",
+        "stats": [
+          { "label": "specjalistów", "value": "12" },
+          { "label": "lat doświadczenia", "value": "15+" },
+          { "label": "zadowolonych pacjentów", "value": "20 000+" }
+        ]
+      }
+    },
+    {
+      "type": "Services",
+      "props": {
+        "layout": "cards-grid",
+        "columns": 3,
+        "withPricing": false,
+        "withIcons": true,
+        "heading": "Nasze specjalizacje",
+        "items": [
+          { "name": "Kardiologia", "desc": "Diagnostyka i leczenie chorób układu krążenia.", "icon": "♥" },
+          { "name": "Pediatria", "desc": "Kompleksowa opieka nad zdrowiem najmłodszych pacjentów.", "icon": "✚" },
+          { "name": "Dermatologia", "desc": "Diagnostyka i leczenie chorób skóry oraz konsultacje estetyczne.", "icon": "✦" },
+          { "name": "Diagnostyka laboratoryjna", "desc": "Pełen zakres badań krwi i analiz na miejscu.", "icon": "⚕" },
+          { "name": "Fizjoterapia", "desc": "Indywidualnie dobrane programy rehabilitacji.", "icon": "↻" },
+          { "name": "Medycyna rodzinna", "desc": "Opieka nad pacjentem i jego rodziną na każdym etapie życia.", "icon": "♻" }
+        ]
+      }
+    },
+    {
+      "type": "Reviews",
+      "props": {
+        "layout": "cards-grid",
+        "withRating": true,
+        "withGoogleBadge": true,
+        "heading": "Opinie pacjentów",
+        "reviews": [
+          { "text": "Bardzo profesjonalna obsługa i krótki czas oczekiwania na wizytę. Polecam całej rodzinie.", "author": "Ewa N.", "rating": 5 },
+          { "text": "Lekarze poświęcają czas, żeby wszystko dokładnie wytłumaczyć. Czuję się tu zaopiekowana.", "author": "Grzegorz P.", "rating": 5 },
+          { "text": "Nowoczesny sprzęt i miła atmosfera — zupełnie inne doświadczenie niż w typowej przychodni.", "author": "Aldona W.", "rating": 5 }
+        ]
+      }
+    },
+    {
+      "type": "Hours",
+      "props": {
+        "layout": "day-list",
+        "showStatus": true,
+        "heading": "Godziny przyjęć",
+        "hours": {
+          "Poniedziałek": "8:00-19:00",
+          "Wtorek": "8:00-19:00",
+          "Środa": "8:00-19:00",
+          "Czwartek": "8:00-19:00",
+          "Piątek": "8:00-17:00",
+          "Sobota": "9:00-13:00",
+          "Niedziela": "Zamknięte"
+        }
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "layout": "info-and-form",
+        "mapStyle": "none",
+        "heading": "Umów się na wizytę",
+        "phone": "+48 22 444 55 66",
+        "email": "rejestracja@centrumvita.pl",
+        "address": "ul. Zdrowotna 4, Wrocław"
+      }
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "layout": "columns",
+        "name": "Centrum Medyczne Vita",
+        "address": "ul. Zdrowotna 4, Wrocław",
+        "phone": "+48 22 444 55 66",
+        "links": ["O klinice", "Specjalizacje", "Zespół", "Kontakt"]
+      }
+    }
+  ]
+}

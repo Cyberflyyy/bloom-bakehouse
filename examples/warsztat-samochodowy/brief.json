@@ -1,0 +1,27 @@
+{
+  "character": "Konkretny, rzemieślniczy warsztat samochodowy — bez marketingowego lukru, tylko fachowość i zaufanie mechanika 'z osiedla'.",
+  "audience": "Kierowcy w każdym wieku, szukający uczciwego serwisu — cenią konkrety (co naprawiają, kiedy są otwarci, jak szybko zadzwonić w nagłej sytuacji).",
+  "mood": "Mocny, surowy, męski — głęboka czerń i ostra czerwień, zero ozdobników, czcionki proste i czytelne.",
+  "bigIdea": "Zbudować wrażenie 'tu się znają na robocie' — strona ma działać jak warsztatowa tablica informacyjna: jasna, konkretna, z naciskiem na szybki kontakt w awarii.",
+  "sectionsNeeded": ["Navbar", "Hero", "Services", "Gallery", "Hours", "CTABanner", "Reviews", "Contact", "Footer"],
+  "sectionsSkipped": [
+    { "section": "About", "reason": "Klient szukający warsztatu chce wiedzieć 'co naprawicie i kiedy', a nie czytać historię firmy — sekcja About wydłużyłaby drogę do najważniejszych informacji." }
+  ],
+  "tokens": {
+    "colors": "Głęboka czerń (#15171C) jako primary i tło — surowo, jak hala warsztatowa; ostra czerwień (#E8482C) jako accent — kolor alarmu, szybkości, akcji.",
+    "typography": "Poppins (display) — mocny, geometryczny krój do nagłówków; Inter (body) — neutralna czytelność na ciemnym tle.",
+    "shape": "Małe zaokrąglenia (6px) — kanciaste, industrialne, jak narzędzia warsztatowe.",
+    "rhythm": "tight — gęsty układ, dużo informacji na wyciągnięcie ręki, bez zbędnego 'powietrza'."
+  },
+  "perSection": [
+    { "type": "Navbar", "layout": "left-logo", "behavior": "sticky", "cta": "phone", "reasoning": "Telefon zawsze widoczny w pasku nawigacji — w awarii klient nie chce szukać danych kontaktowych, ma je na wyciągnięcie kciuka." },
+    { "type": "Hero", "layout": "split", "mediaType": "photo", "accent": "line", "reasoning": "Układ split z konkretnym zdjęciem warsztatu po jednej stronie i twardym przekazem po drugiej — bez udawania, że to coś więcej niż solidny serwis." },
+    { "type": "Services", "layout": "numbered", "withIcons": false, "withPricing": false, "reasoning": "Numerowana lista usług — przejrzysty, 'instrukcyjny' format pasujący do konkretnego charakteru marki; bez cen, bo wycena naprawy zawsze zależy od diagnozy." },
+    { "type": "Gallery", "layout": "two-large", "aspect": "landscape", "reasoning": "Dwa duże zdjęcia 'przed/po' realizacji mówią więcej niż siatka miniaturek — pokazują jakość pracy bez rozpraszania." },
+    { "type": "Hours", "layout": "table", "showStatus": true, "reasoning": "Klasyczna tabela godzin ze statusem 'otwarte teraz' — kierowca w drodze chce w sekundę wiedzieć, czy zdąży dojechać przed zamknięciem." },
+    { "type": "CTABanner", "layout": "full-bar", "style": "bordered", "reasoning": "Wyróżniony pasek z numerem do pomocy drogowej 24/7 — to często najważniejszy powód, dla którego ktoś w ogóle wejdzie na tę stronę." },
+    { "type": "Reviews", "layout": "quote-wall", "withRating": true, "withGoogleBadge": true, "reasoning": "Mur opinii buduje masowe zaufanie — w branży warsztatowej rekomendacje 'od sąsiada' są walutą numer jeden." },
+    { "type": "Contact", "layout": "info-and-map", "mapStyle": "embed", "reasoning": "Mapa dojazdu jest kluczowa — warsztat to miejsce, do którego trzeba fizycznie podjechać, często z awarią na pokładzie." },
+    { "type": "Footer", "layout": "minimal", "reasoning": "Krótka, rzeczowa stopka z numerem telefonu — spójna z konkretnym, bez zbędnych ozdobników charakterem marki." }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "theme": {
+    "primary": "#7A4A2B",
+    "accent": "#C8966B",
+    "bg": "#F9F4EF",
+    "text": "#2B2018",
+    "muted": "#8B7355",
+    "displayFont": "Playfair Display",
+    "bodyFont": "Inter",
+    "radius": "12px",
+    "spacing": "loose"
+  },
+  "sections": [
+    {
+      "type": "Navbar",
+      "props": {
+        "layout": "left-logo",
+        "behavior": "sticky",
+        "cta": "phone",
+        "name": "Kawiarnia Cynamon",
+        "links": ["O nas", "Galeria", "Godziny", "Kontakt"],
+        "phone": "+48 123 456 789"
+      }
+    },
+    {
+      "type": "Hero",
+      "props": {
+        "layout": "left-text",
+        "mediaType": "photo",
+        "height": "tall",
+        "ctaStyle": "solid",
+        "accent": "badge",
+        "title": "Najlepsza kawa w mieście",
+        "subtitle": "Rzemieślnicza kawiarnia w sercu miasta od 2010 roku",
+        "ctaText": "Odwiedź nas",
+        "ctaHref": "#kontakt",
+        "bgImage": "/img/hero.svg",
+        "badge": "4.9 ★ · 340 opinii"
+      }
+    },
+    {
+      "type": "About",
+      "props": {
+        "layout": "text-image-right",
+        "imageStyle": "rounded",
+        "heading": "Nasza historia",
+        "body": "Tworzymy kawę z pasją od ponad 14 lat. Ziarna palimy sami, w małych partiach, żeby każda filiżanka miała swój charakter.",
+        "image": "/img/about.svg",
+        "stats": [
+          { "label": "lat na rynku", "value": "14" },
+          { "label": "rodzajów kawy", "value": "12" },
+          { "label": "stałych gości", "value": "1200+" }
+        ]
+      }
+    },
+    {
+      "type": "Gallery",
+      "props": {
+        "layout": "grid",
+        "aspect": "landscape",
+        "heading": "Zajrzyj do nas",
+        "images": ["/img/gallery-1.svg", "/img/gallery-2.svg", "/img/gallery-3.svg"]
+      }
+    },
+    {
+      "type": "Hours",
+      "props": {
+        "layout": "card-with-status",
+        "hours": {
+          "Poniedziałek": "8:00-20:00",
+          "Wtorek": "8:00-20:00",
+          "Środa": "8:00-20:00",
+          "Czwartek": "8:00-20:00",
+          "Piątek": "8:00-22:00",
+          "Sobota": "9:00-22:00",
+          "Niedziela": "10:00-18:00"
+        },
+        "showStatus": true
+      }
+    },
+    {
+      "type": "Reviews",
+      "props": {
+        "layout": "cards-grid",
+        "withRating": true,
+        "withGoogleBadge": true,
+        "heading": "Co mówią nasi goście",
+        "reviews": [
+          { "text": "Najlepsza kawa w okolicy, a do tego świetna atmosfera.", "author": "Anna K.", "rating": 5 },
+          { "text": "Przesympatyczna obsługa i pyszne ciasta na miejscu.", "author": "Marek W.", "rating": 5 },
+          { "text": "Wracam tu zawsze, gdy jestem w centrum.", "author": "Justyna P.", "rating": 4 }
+        ]
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "layout": "info-and-map",
+        "mapStyle": "embed",
+        "heading": "Odwiedź nas",
+        "phone": "+48 123 456 789",
+        "address": "ul. Kawowa 5, Warszawa",
+        "mapsUrl": "https://maps.google.com"
+      }
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "layout": "minimal",
+        "name": "Kawiarnia Cynamon",
+        "phone": "+48 123 456 789"
+      }
+    }
+  ]
+}

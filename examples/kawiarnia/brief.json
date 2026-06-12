@@ -1,0 +1,27 @@
+{
+  "character": "Ciepła, rzemieślnicza kawiarnia osiedlowa z duszą — miejsce na spotkanie, nie fast-food kawowy.",
+  "audience": "Mieszkańcy okolicy w wieku 25-45, pracujący zdalnie, szukający \"swojego\" miejsca na kawę i rozmowę.",
+  "mood": "Przytulny, ziemisty, rzemieślniczy — drewno, brąz, kremowe tła, serif w nagłówkach dla nuty tradycji.",
+  "bigIdea": "Pokazać kawiarnię jako miejsce z historią i charakterem, nie kolejną sieciówkę — nacisk na rzemiosło, ludzi i atmosferę.",
+  "sectionsNeeded": ["Navbar", "Hero", "About", "Gallery", "Hours", "Reviews", "Contact", "Footer"],
+  "sectionsSkipped": [
+    { "section": "Services", "reason": "Menu kawiarni zmienia się sezonowo i lepiej sprawdza się jako PDF/insta niż statyczna lista na landing page — wystarczy zachęcić do odwiedzin." },
+    { "section": "CTABanner", "reason": "Kawiarnia sprzedaje atmosferę, nie 'akcję sprzedażową' — dodatkowy baner z wezwaniem do działania zaburzyłby spokojny, kameralny ton strony." }
+  ],
+  "tokens": {
+    "colors": "Ciepła paleta ziemista: głęboki brąz (#7A4A2B) jako primary, karmelowy beż (#C8966B) jako accent, kremowe tło (#F9F4EF) — kojarzy się z drewnem, kawą, ciastem.",
+    "typography": "Playfair Display (display) — elegancka serifowa nuta rzemiosła; Inter (body) — czytelność i nowoczesność w kontraście.",
+    "shape": "Duże zaokrąglenia (12px) — miękko, przytulnie, jak filiżanka.",
+    "rhythm": "loose — dużo oddechu między sekcjami, tempo 'usiądź i zostań na dłużej'."
+  },
+  "perSection": [
+    { "type": "Navbar", "layout": "left-logo", "behavior": "sticky", "cta": "phone", "reasoning": "Nazwa po lewej buduje rozpoznawalność marki, telefon w CTA bo klienci często dzwonią z pytaniem o wolne stoliki." },
+    { "type": "Hero", "layout": "left-text", "mediaType": "photo", "height": "tall", "ctaStyle": "solid", "accent": "badge", "reasoning": "Zdjęcie wnętrza buduje klimat od pierwszej sekundy, badge z oceną Google buduje zaufanie od razu." },
+    { "type": "About", "layout": "text-image-right", "imageStyle": "rounded", "reasoning": "Historia i liczby (lata działania, rodzaje kawy) budują wiarygodność rzemieślniczą bez zbędnego marketingowego języka." },
+    { "type": "Gallery", "layout": "grid", "aspect": "landscape", "reasoning": "Proste, klasyczne zdjęcia wnętrza i produktów — kawiarnia sprzedaje się obrazem, nie tekstem." },
+    { "type": "Hours", "layout": "card-with-status", "showStatus": true, "reasoning": "Status 'otwarte teraz' to najczęściej szukana informacja przed wizytą — wyróżniona karta to ułatwia." },
+    { "type": "Reviews", "layout": "cards-grid", "withRating": true, "withGoogleBadge": true, "reasoning": "Opinie z Google budują społeczny dowód słuszności — siatka kart pozwala pokazać kilka naraz." },
+    { "type": "Contact", "layout": "info-and-map", "mapStyle": "embed", "reasoning": "Mapa jest kluczowa dla lokalnego biznesu — klient musi łatwo znaleźć drogę." },
+    { "type": "Footer", "layout": "minimal", "reasoning": "Minimalna stopka — kawiarnia nie potrzebuje rozbudowanej nawigacji, strona jest krótka i przejrzysta." }
+  ]
+}

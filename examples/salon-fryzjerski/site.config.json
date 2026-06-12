@@ -1,0 +1,121 @@
+{
+  "theme": {
+    "primary": "#9B6B85",
+    "accent": "#E8B4BC",
+    "bg": "#FDF6F4",
+    "text": "#3A2E36",
+    "muted": "#9C8690",
+    "displayFont": "Poppins",
+    "bodyFont": "Plus Jakarta Sans",
+    "radius": "24px",
+    "spacing": "loose"
+  },
+  "sections": [
+    {
+      "type": "Navbar",
+      "props": {
+        "layout": "centered",
+        "behavior": "transparent-on-hero",
+        "cta": "button",
+        "name": "Studio Włosów Bloom",
+        "links": ["Usługi", "Galeria", "Opinie", "Kontakt"]
+      }
+    },
+    {
+      "type": "Hero",
+      "props": {
+        "layout": "fullscreen-overlay",
+        "mediaType": "photo",
+        "height": "tall",
+        "ctaStyle": "double",
+        "accent": "badge",
+        "title": "Poczuj się pięknie, wyglądaj olśniewająco",
+        "subtitle": "Strzyżenie, koloryzacja i stylizacja w przyjaznej, kameralnej atmosferze",
+        "ctaText": "Zarezerwuj wizytę",
+        "ctaHref": "#kontakt",
+        "bgImage": "/img/hero.jpg",
+        "badge": "Ulubiony salon w okolicy ✨"
+      }
+    },
+    {
+      "type": "About",
+      "props": {
+        "layout": "text-image-left",
+        "imageStyle": "circle",
+        "heading": "Twój zespół stylistów",
+        "body": "Jesteśmy zespołem pasjonatów fryzjerstwa — każda wizyta to dla nas okazja, by pomóc Ci poczuć się sobą. Stawiamy na rozmowę, dobrą energię i efekty, które naprawdę pasują do Ciebie.",
+        "image": "/img/about.jpg"
+      }
+    },
+    {
+      "type": "Services",
+      "props": {
+        "layout": "cards-grid",
+        "columns": 3,
+        "withPricing": true,
+        "withIcons": true,
+        "heading": "Co dla Ciebie mamy",
+        "items": [
+          { "name": "Strzyżenie damskie", "desc": "Konsultacja + mycie + strzyżenie + stylizacja", "price": "od 120 zł", "icon": "✂" },
+          { "name": "Koloryzacja", "desc": "Farbowanie, balayage, refresh koloru", "price": "od 220 zł", "icon": "🎨" },
+          { "name": "Stylizacja na wydarzenia", "desc": "Upięcia ślubne i okolicznościowe", "price": "od 180 zł", "icon": "💫" },
+          { "name": "Pielęgnacja", "desc": "Zabiegi regenerujące i nawilżające", "price": "od 90 zł", "icon": "🌿" },
+          { "name": "Strzyżenie męskie", "desc": "Strzyżenie + modelowanie brody", "price": "od 80 zł", "icon": "✂" },
+          { "name": "Konsultacja stylistyczna", "desc": "Dobór koloru i fryzury do Twojego typu urody", "price": "60 zł", "icon": "💬" }
+        ]
+      }
+    },
+    {
+      "type": "Gallery",
+      "props": {
+        "layout": "masonry",
+        "aspect": "mixed",
+        "heading": "Metamorfozy naszych klientek",
+        "images": ["/img/gallery-1.jpg", "/img/gallery-2.jpg", "/img/gallery-3.jpg", "/img/gallery-4.jpg"]
+      }
+    },
+    {
+      "type": "Reviews",
+      "props": {
+        "layout": "carousel",
+        "withRating": true,
+        "withGoogleBadge": true,
+        "heading": "Co mówią nasze klientki",
+        "reviews": [
+          { "text": "Wyszłam z salonu jak nowo narodzona! Cudowna atmosfera i świetna koloryzacja.", "author": "Kasia M.", "rating": 5 },
+          { "text": "Wreszcie ktoś, kto słucha i doradza, a nie tylko strzyże.", "author": "Ola R.", "rating": 5 },
+          { "text": "Polecam każdej koleżance — profesjonalizm i mega klimat.", "author": "Magda T.", "rating": 5 }
+        ]
+      }
+    },
+    {
+      "type": "CTABanner",
+      "props": {
+        "layout": "boxed",
+        "style": "solid-color",
+        "headline": "Umów się na metamorfozę już dziś",
+        "ctaText": "Zarezerwuj online",
+        "ctaHref": "#kontakt"
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "layout": "info-and-map",
+        "mapStyle": "embed",
+        "heading": "Znajdź nas",
+        "phone": "+48 600 700 800",
+        "address": "ul. Różana 8, Kraków",
+        "mapsUrl": "https://maps.google.com"
+      }
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "layout": "centered",
+        "name": "Studio Włosów Bloom",
+        "links": ["Usługi", "Galeria", "Opinie", "Kontakt"]
+      }
+    }
+  ]
+}

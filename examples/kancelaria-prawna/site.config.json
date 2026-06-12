@@ -1,0 +1,103 @@
+{
+  "theme": {
+    "primary": "#101B33",
+    "accent": "#A88A4E",
+    "bg": "#FFFFFF",
+    "text": "#16213A",
+    "muted": "#5C6B85",
+    "displayFont": "Cormorant Garamond",
+    "bodyFont": "Inter",
+    "radius": "4px",
+    "spacing": "normal"
+  },
+  "sections": [
+    {
+      "type": "Navbar",
+      "props": {
+        "layout": "split",
+        "behavior": "static",
+        "cta": "button",
+        "name": "Kancelaria Wójcik & Partnerzy",
+        "links": ["O kancelarii", "Praktyki", "Zespół", "Kontakt"]
+      }
+    },
+    {
+      "type": "Hero",
+      "props": {
+        "layout": "text-only",
+        "mediaType": "none",
+        "height": "medium",
+        "ctaStyle": "outline",
+        "accent": "line",
+        "title": "Doradztwo prawne na najwyższym poziomie",
+        "subtitle": "Reprezentujemy firmy i osoby prywatne w sprawach gospodarczych, cywilnych i podatkowych od 1998 roku.",
+        "ctaText": "Umów konsultację",
+        "ctaHref": "#kontakt"
+      }
+    },
+    {
+      "type": "About",
+      "props": {
+        "layout": "two-column",
+        "imageStyle": "none",
+        "heading": "Doświadczenie, które buduje zaufanie",
+        "body": "Od ponad 25 lat wspieramy klientów w najtrudniejszych sprawach — od negocjacji kontraktów po spory sądowe. Łączymy precyzję prawniczą z praktycznym podejściem do biznesu.",
+        "stats": [
+          { "label": "lat doświadczenia", "value": "25" },
+          { "label": "wygranych spraw", "value": "640+" },
+          { "label": "obsługiwanych branż", "value": "18" }
+        ]
+      }
+    },
+    {
+      "type": "Services",
+      "props": {
+        "layout": "list-icons",
+        "columns": 2,
+        "withPricing": false,
+        "withIcons": true,
+        "heading": "Obszary praktyki",
+        "items": [
+          { "name": "Prawo gospodarcze", "desc": "Umowy handlowe, fuzje i przejęcia, restrukturyzacje, compliance.", "icon": "§" },
+          { "name": "Prawo cywilne", "desc": "Spory majątkowe, odszkodowania, sprawy spadkowe.", "icon": "⚖" },
+          { "name": "Prawo podatkowe", "desc": "Optymalizacja podatkowa, kontrole skarbowe, postępowania administracyjne.", "icon": "₪" },
+          { "name": "Prawo pracy", "desc": "Spory pracownicze, polityki wewnętrzne, negocjacje zbiorowe.", "icon": "✦" }
+        ]
+      }
+    },
+    {
+      "type": "Reviews",
+      "props": {
+        "layout": "single-featured",
+        "withRating": false,
+        "withGoogleBadge": false,
+        "heading": "Opinie klientów",
+        "reviews": [
+          { "text": "Profesjonalizm i precyzja na każdym etapie współpracy. Kancelaria, której można zaufać w najtrudniejszych sprawach.", "author": "Prezes spółki z branży produkcyjnej" },
+          { "text": "Rzetelność i jasna komunikacja — dokładnie wiedzieliśmy, na czym stoimy na każdym etapie postępowania.", "author": "Klient indywidualny" }
+        ]
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "layout": "info-and-form",
+        "mapStyle": "none",
+        "heading": "Skontaktuj się z kancelarią",
+        "phone": "+48 22 555 12 34",
+        "email": "kontakt@wojcik-partnerzy.pl",
+        "address": "ul. Bankowa 12, 00-095 Warszawa"
+      }
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "layout": "columns",
+        "name": "Kancelaria Wójcik & Partnerzy",
+        "address": "ul. Bankowa 12, 00-095 Warszawa",
+        "phone": "+48 22 555 12 34",
+        "links": ["O kancelarii", "Praktyki", "Zespół", "Kontakt"]
+      }
+    }
+  ]
+}

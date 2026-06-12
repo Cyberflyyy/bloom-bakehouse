@@ -1,0 +1,27 @@
+{
+  "character": "Poważna, butikowa kancelaria z wieloletnią renomą — autorytet i dyskrecja, nie agresywny marketing prawniczy.",
+  "audience": "Zarządy firm, przedsiębiorcy i klienci indywidualni w sprawach o wysokiej stawce, szukający zaufanego doradcy, nie 'taniej oferty'.",
+  "mood": "Stonowany, elegancki, granatowo-złoty — surowa elegancja gabinetu, nie korporacyjna sterylność.",
+  "bigIdea": "Zbudować wrażenie instytucji o ugruntowanej pozycji — strona ma działać jak wizytówka z mosiądzu, nie jak landing page sprzedażowy.",
+  "sectionsNeeded": ["Navbar", "Hero", "About", "Services", "Reviews", "Contact", "Footer"],
+  "sectionsSkipped": [
+    { "section": "Gallery", "reason": "Kancelaria sprzedaje wiedzę i zaufanie, nie estetykę wnętrza — galeria zdjęć biura wprowadziłaby niepotrzebny, 'lifestylowy' ton." },
+    { "section": "Hours", "reason": "Klient korporacyjny umawia się na konkretny termin, nie 'wpada po godzinach' — sekcja z godzinami otwarcia byłaby nie na miejscu." },
+    { "section": "CTABanner", "reason": "Nachalne wezwanie do działania kłóci się z wizerunkiem powściągliwej, prestiżowej firmy — formularz kontaktowy w sekcji Contact wystarcza." }
+  ],
+  "tokens": {
+    "colors": "Głęboki granat (#101B33) jako primary buduje powagę i zaufanie, stonowane złoto (#A88A4E) jako accent dodaje prestiżu bez przesady, czysta biel jako tło dla maksymalnej czytelności dokumentów-jak treści.",
+    "typography": "Cormorant Garamond (display) — klasyczny, prawniczy serif kojarzący się z dokumentami i tradycją; Inter (body) — neutralna czytelność.",
+    "shape": "Minimalne zaokrąglenia (4px) — ostre, formalne krawędzie zamiast 'przyjaznych' zaokrągleń.",
+    "rhythm": "normal — wyważone odstępy, nic nie krzyczy, wszystko ma swoje miejsce."
+  },
+  "perSection": [
+    { "type": "Navbar", "layout": "split", "behavior": "static", "cta": "button", "reasoning": "Logo wycentrowane w układzie split sygnalizuje powagę instytucji; statyczne (nie sticky) zachowanie - kancelaria nie 'goni' użytkownika." },
+    { "type": "Hero", "layout": "text-only", "mediaType": "none", "accent": "line", "ctaStyle": "outline", "reasoning": "Brak zdjęcia i stonowany outline CTA — komunikat sam w sobie ma być autorytetem, bez wizualnych ozdobników typowych dla biznesów lifestylowych." },
+    { "type": "About", "layout": "two-column", "imageStyle": "none", "reasoning": "Układ dwukolumnowy z liczbami (lata, sprawy) to twardy dowód doświadczenia — bez zdjęć, które mogłyby wydawać się 'sprzedażowe'." },
+    { "type": "Services", "layout": "list-icons", "columns": 2, "withIcons": true, "withPricing": false, "reasoning": "Lista praktyk z ikonami-symbolami prawniczymi (§, ⚖) — bez cen, bo wycena usług prawnych zawsze wymaga indywidualnej rozmowy." },
+    { "type": "Reviews", "layout": "single-featured", "withRating": false, "withGoogleBadge": false, "reasoning": "Jedna wyróżniona, dłuższa opinia robi większe wrażenie niż siatka gwiazdek — buduje powagę, nie 'masową popularność'." },
+    { "type": "Contact", "layout": "info-and-form", "mapStyle": "none", "reasoning": "Formularz kontaktowy zamiast mapy — klient ma najpierw opisać sprawę, a nie 'wpaść z ulicy'." },
+    { "type": "Footer", "layout": "columns", "reasoning": "Rozbudowana stopka z pełnymi danymi i nawigacją — instytucjonalny, kompletny obraz firmy." }
+  ]
+}

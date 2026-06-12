@@ -1,0 +1,27 @@
+{
+  "character": "Lifestyle'owy salon fryzjerski dla młodszej, miejskiej klienteli — przyjazny, energetyczny, 'instagramowy'.",
+  "audience": "Kobiety i mężczyźni 20-40 lat, aktywni w social mediach, szukający nie tylko fryzury, ale też doświadczenia i 'vibe'u' miejsca.",
+  "mood": "Lekki, pastelowy, ciepły różowo-beżowy — przytulnie, ale nowocześnie; dużo zaokrągleń i 'oddechu'.",
+  "bigIdea": "Sprzedać nie tylko strzyżenie, ale całe doświadczenie wizyty — atmosferę, relację z zespołem i metamorfozę, którą można pokazać znajomym.",
+  "sectionsNeeded": ["Navbar", "Hero", "About", "Services", "Gallery", "Reviews", "CTABanner", "Contact", "Footer"],
+  "sectionsSkipped": [
+    { "section": "Hours", "reason": "Salon działa na rezerwacje online, a nie 'wpadanie z ulicy' — eksponowanie godzin otwarcia odciągałoby uwagę od głównego CTA 'zarezerwuj wizytę'." }
+  ],
+  "tokens": {
+    "colors": "Pudrowy róż (#E8B4BC) jako accent i stonowany śliwkowy (#9B6B85) jako primary na kremowo-różowym tle (#FDF6F4) — ciepło, kobieco, ale nie infantylnie.",
+    "typography": "Poppins (display) — okrągły, przyjazny krój dla nagłówków; Plus Jakarta Sans (body) — nowoczesny, lekki w czytaniu na telefonie.",
+    "shape": "Duże zaokrąglenia (24px) — miękkie, 'puchate' kształty pasujące do kobiecego, lifestyle'owego charakteru marki.",
+    "rhythm": "loose — przestrzeń między sekcjami daje poczucie 'spa', spokoju i odprężenia."
+  },
+  "perSection": [
+    { "type": "Navbar", "layout": "centered", "behavior": "transparent-on-hero", "cta": "button", "reasoning": "Wycentrowane logo na przezroczystym tle nad zdjęciem hero tworzy eleganckie, 'editorialowe' pierwsze wrażenie typowe dla marek lifestyle'owych." },
+    { "type": "Hero", "layout": "fullscreen-overlay", "mediaType": "photo", "ctaStyle": "double", "accent": "badge", "reasoning": "Pełnoekranowe zdjęcie wnętrza buduje emocje od razu, podwójne CTA daje wybór: 'zarezerwuj' albo 'dowiedz się więcej' — różne etapy gotowości klientki." },
+    { "type": "About", "layout": "text-image-left", "imageStyle": "circle", "reasoning": "Okrągłe zdjęcie zespołu humanizuje markę — klientka chce wiedzieć, kto będzie ją strzygł, nie tylko co salon oferuje." },
+    { "type": "Services", "layout": "cards-grid", "columns": 3, "withPricing": true, "withIcons": true, "reasoning": "Siatka kart z cenami daje szybki przegląd oferty — klientki lubią wiedzieć 'ile to będzie kosztować' zanim zadzwonią." },
+    { "type": "Gallery", "layout": "masonry", "aspect": "mixed", "reasoning": "Układ masonry naśladuje siatkę Instagrama — naturalny, znajomy sposób przeglądania metamorfoz dla tej grupy odbiorców." },
+    { "type": "Reviews", "layout": "carousel", "withRating": true, "withGoogleBadge": true, "reasoning": "Karuzela opinii zachęca do przewijania — angażujący, mobilny format zamiast statycznej listy." },
+    { "type": "CTABanner", "layout": "boxed", "style": "solid-color", "reasoning": "Wyróżniony, kolorowy panel z wezwaniem do rezerwacji tuż przed sekcją kontaktową — domyka decyzję klientki w odpowiednim momencie." },
+    { "type": "Contact", "layout": "info-and-map", "mapStyle": "embed", "reasoning": "Mapa pomaga znaleźć lokal — kluczowe dla biznesu stacjonarnego w mieście." },
+    { "type": "Footer", "layout": "centered", "reasoning": "Wycentrowana, lekka stopka z linkami społecznościowymi — spójna z 'editorialowym' charakterem reszty strony." }
+  ]
+}

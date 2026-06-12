@@ -1,0 +1,125 @@
+{
+  "theme": {
+    "primary": "#15171C",
+    "accent": "#E8482C",
+    "bg": "#15171C",
+    "text": "#F2F2F0",
+    "muted": "#9CA0A8",
+    "displayFont": "Poppins",
+    "bodyFont": "Inter",
+    "radius": "6px",
+    "spacing": "tight"
+  },
+  "sections": [
+    {
+      "type": "Navbar",
+      "props": {
+        "layout": "left-logo",
+        "behavior": "sticky",
+        "cta": "phone",
+        "name": "MotoTech Serwis",
+        "links": ["Usługi", "Realizacje", "Godziny", "Kontakt"],
+        "phone": "+48 511 222 333"
+      }
+    },
+    {
+      "type": "Hero",
+      "props": {
+        "layout": "split",
+        "mediaType": "photo",
+        "height": "tall",
+        "ctaStyle": "solid",
+        "accent": "line",
+        "title": "Twój samochód w dobrych rękach",
+        "subtitle": "Diagnostyka, naprawy mechaniczne i serwis blacharsko-lakierniczy — szybko, solidnie, bez ukrytych kosztów.",
+        "ctaText": "Umów wizytę",
+        "ctaHref": "#kontakt",
+        "bgImage": "/img/hero.jpg"
+      }
+    },
+    {
+      "type": "Services",
+      "props": {
+        "layout": "numbered",
+        "columns": 2,
+        "withPricing": false,
+        "withIcons": false,
+        "heading": "Co naprawiamy",
+        "items": [
+          { "name": "Diagnostyka komputerowa", "desc": "Pełen odczyt usterek i błędów silnika na nowoczesnym sprzęcie." },
+          { "name": "Mechanika ogólna", "desc": "Naprawy silników, skrzyń biegów, zawieszenia i układów hamulcowych." },
+          { "name": "Blacharstwo i lakiernictwo", "desc": "Usuwanie wgnieceń, lakierowanie, renowacja po kolizjach." },
+          { "name": "Klimatyzacja i ogumienie", "desc": "Serwis klimatyzacji, sezonowa wymiana i wyważanie kół." }
+        ]
+      }
+    },
+    {
+      "type": "Gallery",
+      "props": {
+        "layout": "two-large",
+        "aspect": "landscape",
+        "heading": "Nasze realizacje",
+        "images": ["/img/gallery-1.jpg", "/img/gallery-2.jpg"]
+      }
+    },
+    {
+      "type": "Hours",
+      "props": {
+        "layout": "table",
+        "showStatus": true,
+        "hours": {
+          "Poniedziałek": "7:00-18:00",
+          "Wtorek": "7:00-18:00",
+          "Środa": "7:00-18:00",
+          "Czwartek": "7:00-18:00",
+          "Piątek": "7:00-18:00",
+          "Sobota": "8:00-14:00",
+          "Niedziela": "Zamknięte"
+        }
+      }
+    },
+    {
+      "type": "CTABanner",
+      "props": {
+        "layout": "full-bar",
+        "style": "bordered",
+        "headline": "Awaria w trasie? Zadzwoń — pomoc drogowa 24/7",
+        "ctaText": "Zadzwoń teraz",
+        "ctaHref": "tel:+48511222333"
+      }
+    },
+    {
+      "type": "Reviews",
+      "props": {
+        "layout": "quote-wall",
+        "withRating": true,
+        "withGoogleBadge": true,
+        "heading": "Zaufali nam kierowcy",
+        "reviews": [
+          { "text": "Szybka diagnoza, uczciwa wycena, naprawa zrobiona na czas. Polecam każdemu.", "author": "Tomek G.", "rating": 5 },
+          { "text": "Wreszcie mechanik, który tłumaczy, co i dlaczego naprawia.", "author": "Robert K.", "rating": 5 },
+          { "text": "Blacharka po stłuczce wygląda jak nowa — naprawdę solidna robota.", "author": "Adam S.", "rating": 5 }
+        ]
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "layout": "info-and-map",
+        "mapStyle": "embed",
+        "heading": "Zajedź do nas",
+        "phone": "+48 511 222 333",
+        "address": "ul. Przemysłowa 22, Łódź",
+        "mapsUrl": "https://maps.google.com"
+      }
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "layout": "minimal",
+        "name": "MotoTech Serwis",
+        "phone": "+48 511 222 333"
+      }
+    }
+  ]
+}

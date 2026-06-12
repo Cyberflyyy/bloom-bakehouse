@@ -1,0 +1,157 @@
+{
+  "theme": {
+    "primary": "#3E2F25",
+    "accent": "#7A8B5C",
+    "bg": "#FAF6EF",
+    "text": "#2C241D",
+    "muted": "#8C7F70",
+    "displayFont": "Fraunces",
+    "bodyFont": "Inter",
+    "radius": "14px",
+    "spacing": "loose"
+  },
+  "sections": [
+    {
+      "type": "Navbar",
+      "props": {
+        "layout": "minimal",
+        "behavior": "sticky",
+        "cta": "phone",
+        "name": "BLOOM Bakehouse",
+        "links": [
+          "O nas",
+          "Godziny",
+          "Kontakt"
+        ],
+        "phone": "575 191 932"
+      }
+    },
+    {
+      "type": "Hero",
+      "props": {
+        "layout": "left-text",
+        "mediaType": "photo",
+        "height": "tall",
+        "ctaStyle": "solid",
+        "accent": "badge",
+        "title": "Pieczemy na miejscu",
+        "subtitle": "Rzemieślnicze wypieki prosto z pieca, specialty coffee i matcha. Oleśnicka 20/1c, wrocławski Ołbin.",
+        "ctaText": "Sprawdź, kiedy pieczemy",
+        "ctaHref": "#godziny",
+        "bgImage": "/img/stock-1.jpg",
+        "badge": "Własna produkcja · Ołbin, Wrocław"
+      }
+    },
+    {
+      "type": "About",
+      "props": {
+        "layout": "text-image-right",
+        "imageStyle": "rounded",
+        "heading": "Bakehouse na Ołbinie",
+        "body": "BLOOM to mała piekarnia rzemieślnicza przy Oleśnickiej. Croissanty, pain au chocolat, cynamonki i chlebek tostowy powstają u nas na miejscu — od wtorku do niedzieli witryna zapełnia się od rana tym, co właśnie wyszło z pieca. Do wypieków parzymy kawę speciality i matchę, bo dobre pieczywo zasługuje na równie dobrą filiżankę.",
+        "image": "/img/maps-1.jpg",
+        "imageAlt": "Witryna BLOOM Bakehouse pełna świeżych wypieków — croissanty, pain au chocolat, cynamonki i chlebek tostowy z własnej produkcji",
+        "stats": [
+          {
+            "label": "ocena w Google",
+            "value": "4.7 ★"
+          },
+          {
+            "label": "obserwujących na Instagramie",
+            "value": "2,7 tys."
+          },
+          {
+            "label": "świeże wypieki od 9:00",
+            "value": "wt–nd"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Services",
+      "props": {
+        "layout": "alternating-rows",
+        "columns": 2,
+        "withPricing": false,
+        "withIcons": false,
+        "heading": "Od pieca do filiżanki",
+        "items": [
+          {
+            "name": "Wypieki rzemieślnicze",
+            "desc": "Pieczywo i wypieki z własnej produkcji — croissanty, cynamonki, pain au chocolat i chlebek tostowy, wszystko z naszej pracowni na Ołbinie."
+          },
+          {
+            "name": "Specialty coffee",
+            "desc": "Kawa z segmentu specialty — starannie dobierana i parzona, do pary ze świeżym croissantem."
+          },
+          {
+            "name": "Matcha",
+            "desc": "Napoje na bazie matchy — zielony akcent w menu i nasza ulubiona alternatywa dla kawy."
+          }
+        ]
+      }
+    },
+    {
+      "type": "Hours",
+      "props": {
+        "layout": "card-with-status",
+        "showStatus": true,
+        "heading": "Zdążysz po świeże",
+        "hours": {
+          "Poniedziałek": "Zamknięte",
+          "Wtorek": "9:00-18:00",
+          "Środa": "9:00-18:00",
+          "Czwartek": "9:00-18:00",
+          "Piątek": "9:00-18:00",
+          "Sobota": "9:00-18:00",
+          "Niedziela": "9:00-18:00"
+        }
+      }
+    },
+    {
+      "type": "Contact",
+      "props": {
+        "layout": "info-and-map",
+        "mapStyle": "embed",
+        "heading": "Wpadnij na Oleśnicką",
+        "phone": "575 191 932",
+        "address": "Oleśnicka 20/1c, 50-320 Wrocław (Ołbin)",
+        "instagram": "https://www.instagram.com/bloom.wroclaw/",
+        "mapsUrl": "BLOOM Bakehouse, Oleśnicka 20, 50-320 Wrocław"
+      }
+    },
+    {
+      "type": "CTABanner",
+      "props": {
+        "layout": "full-bar",
+        "style": "solid-color",
+        "headline": "Świeże wypieki od wtorku do niedzieli, zawsze od 9:00 — wpadnij na Ołbin.",
+        "ctaText": "Zadzwoń: 575 191 932",
+        "ctaHref": "tel:575191932"
+      }
+    },
+    {
+      "type": "Footer",
+      "props": {
+        "layout": "minimal",
+        "name": "BLOOM Bakehouse",
+        "address": "Oleśnicka 20/1c, 50-320 Wrocław",
+        "phone": "575 191 932",
+        "instagram": "https://www.instagram.com/bloom.wroclaw/"
+      }
+    }
+  ],
+  "meta": {
+    "title": "BLOOM Bakehouse — piekarnia i kawiarnia, Wrocław Ołbin",
+    "description": "Piekarnia rzemieślnicza na Ołbinie: croissanty i wypieki z własnej produkcji, specialty coffee i matcha. Wt–nd 9–18, Oleśnicka 20/1c, Wrocław.",
+    "ogImage": "/img/maps-1.jpg"
+  },
+  "site": {
+    "slug": "bloom-bakehouse",
+    "url": "https://bloom-bakehouse.vercel.app"
+  },
+  "leads": {
+    "supabaseUrl": "https://xoyxyhwyglkllsqtaycf.supabase.co",
+    "anonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhveXh5aHd5Z2xrbGxzcXRheWNmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4NDU4NTIsImV4cCI6MjA5NjQyMTg1Mn0.dzxHTFzfOd-oVpXQ7K9VFzneVYj2XtX3O_Paps_Yl-U"
+  }
+}

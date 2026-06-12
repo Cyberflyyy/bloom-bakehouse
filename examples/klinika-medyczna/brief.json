@@ -1,0 +1,27 @@
+{
+  "character": "Nowoczesne, kameralne centrum medyczne — profesjonalizm i empatia w równych proporcjach, bez sterylnego chłodu wielkich szpitali.",
+  "audience": "Pacjenci indywidualni i rodziny szukający stałej opieki — cenią zaufanie do lekarza bardziej niż niską cenę.",
+  "mood": "Czysty, spokojny, budujący zaufanie — biel i głęboka zieleń, dużo przestrzeni, łagodne zaokrąglenia.",
+  "bigIdea": "Zredukować lęk przed wizytą lekarską — strona ma uspokajać i budować poczucie bezpieczeństwa już od pierwszego wejrzenia, zanim pacjent w ogóle zadzwoni.",
+  "sectionsNeeded": ["Navbar", "Hero", "About", "Services", "Reviews", "Hours", "Contact", "Footer"],
+  "sectionsSkipped": [
+    { "section": "Gallery", "reason": "Zdjęcia wnętrza placówki medycznej często budzą skojarzenia kliniczne/chłodne — lepiej budować zaufanie przez liczby, opinie i jasny opis specjalizacji niż przez fotografie korytarzy." },
+    { "section": "CTABanner", "reason": "Nachalne wezwanie do działania nie pasuje do tematyki zdrowia — formularz w sekcji kontaktowej to wystarczające i stosowne miejsce na umówienie wizyty." }
+  ],
+  "tokens": {
+    "colors": "Głęboka zieleń (#1B4332) jako primary i stonowana szałwiowa zieleń (#52A37C) jako accent na czystej bieli — uniwersalny kod 'zdrowia i spokoju' bez bycia nudnym błękitem korporacyjnym.",
+    "typography": "Plus Jakarta Sans (display) — nowoczesny, ciepły, czytelny krój bez sztywności typowej dla służby zdrowia; Inter (body) — najwyższa czytelność dla informacji medycznych.",
+    "shape": "Średnie zaokrąglenia (16px) — przyjazne, łagodzące, ale wciąż eleganckie i profesjonalne.",
+    "rhythm": "normal — wyważone odstępy budują poczucie porządku i spokoju, kluczowe w kontekście zdrowia."
+  },
+  "perSection": [
+    { "type": "Navbar", "layout": "left-logo", "behavior": "sticky", "cta": "button", "reasoning": "Przycisk 'umów wizytę' zawsze widoczny w nawigacji — to najważniejsza akcja na całej stronie, musi być dostępna z każdego miejsca." },
+    { "type": "Hero", "layout": "right-text", "mediaType": "photo", "accent": "badge", "reasoning": "Zdjęcie po lewej (tekst po prawej) z ciepłym, ludzkim kadrem buduje od razu poczucie 'tu się o mnie zatroszczą', a nie 'tu jestem numerkiem'." },
+    { "type": "About", "layout": "centered-narrow", "imageStyle": "none", "reasoning": "Wyśrodkowany, skondensowany opis z liczbami buduje wiarygodność szybko i bez rozpraszania — pacjent szuka konkretu, nie marketingowej narracji." },
+    { "type": "Services", "layout": "cards-grid", "columns": 3, "withIcons": true, "withPricing": false, "reasoning": "Siatka kart ze specjalizacjami pozwala szybko zorientować się 'czy to miejsce dla mnie' — bez cen, bo te zależą od ubezpieczenia i zakresu wizyty." },
+    { "type": "Reviews", "layout": "cards-grid", "withRating": true, "withGoogleBadge": true, "reasoning": "Opinie pacjentów to kluczowy czynnik wyboru placówki medycznej — siatka kart pokazuje wiele głosów naraz, budując zbiorowe zaufanie." },
+    { "type": "Hours", "layout": "day-list", "showStatus": true, "reasoning": "Czytelna lista dni z wyróżnionym dniem dzisiejszym — pacjent szybko sprawdza, czy zdąży umówić się na dziś." },
+    { "type": "Contact", "layout": "info-and-form", "mapStyle": "none", "reasoning": "Formularz rejestracyjny zamiast mapy — celem jest umówienie wizyty online, a nie tylko wskazanie lokalizacji." },
+    { "type": "Footer", "layout": "columns", "reasoning": "Pełna stopka z danymi kontaktowymi i nawigacją — instytucja medyczna musi sprawiać wrażenie kompletnej i wiarygodnej na każdym poziomie strony." }
+  ]
+}
