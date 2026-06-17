@@ -142,37 +142,35 @@ export default function Navbar({
     <header className={`${positionClass} ${bgClass} transition-colors duration-300`}>
       <nav className="container">{inner}</nav>
 
-      {/* Panel mobilny — fixed overlay pod paskiem nawigacji */}
-      {open && (
-        <div
-          className="md:hidden fixed inset-0 top-[57px] z-40 overflow-y-auto"
-          style={{ background: "var(--color-bg)" }}
-        >
-          <div className="container py-4 flex flex-col gap-1 border-t" style={{ borderColor: "color-mix(in srgb, var(--color-text) 10%, transparent)" }}>
-            {links.map((l) => (
-              <a
-                key={l}
-                href={slugify(l)}
-                onClick={() => setOpen(false)}
-                className="py-3 text-base font-medium border-b last:border-b-0"
-                style={{ color: "var(--color-text)", borderColor: "color-mix(in srgb, var(--color-text) 7%, transparent)" }}
-              >
-                {l}
-              </a>
-            ))}
-            {cta === "phone" && phone && (
-              <a href={`tel:${phone.replace(/\s+/g, "")}`} onClick={() => setOpen(false)} className="btn btn--solid w-full mt-3">
-                Zadzwoń: {phone}
-              </a>
-            )}
-            {cta === "button" && (
-              <a href="#kontakt" onClick={() => setOpen(false)} className="btn btn--solid w-full mt-3">
-                Skontaktuj się
-              </a>
-            )}
-          </div>
+      {/* Panel mobilny — rozwija się pod sticky headerem */}
+      <div
+        className={`md:hidden overflow-hidden transition-[max-height] duration-300 ease-out ${open ? "max-h-[80vh]" : "max-h-0"}`}
+        style={{ background: "var(--color-bg)" }}
+      >
+        <div className="container py-4 flex flex-col gap-1 border-t" style={{ borderColor: "color-mix(in srgb, var(--color-text) 10%, transparent)" }}>
+          {links.map((l) => (
+            <a
+              key={l}
+              href={slugify(l)}
+              onClick={() => setOpen(false)}
+              className="py-3 text-base font-medium border-b last:border-b-0"
+              style={{ color: "var(--color-text)", borderColor: "color-mix(in srgb, var(--color-text) 7%, transparent)" }}
+            >
+              {l}
+            </a>
+          ))}
+          {cta === "phone" && phone && (
+            <a href={`tel:${phone.replace(/\s+/g, "")}`} onClick={() => setOpen(false)} className="btn btn--solid w-full mt-3">
+              Zadzwoń: {phone}
+            </a>
+          )}
+          {cta === "button" && (
+            <a href="#kontakt" onClick={() => setOpen(false)} className="btn btn--solid w-full mt-3">
+              Skontaktuj się
+            </a>
+          )}
         </div>
-      )}
+      </div>
     </header>
   );
 }
