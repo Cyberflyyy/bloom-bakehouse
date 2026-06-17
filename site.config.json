@@ -154,7 +154,9 @@
           { "src": "/img/drozdowka-truskawka.jpg", "alt": "Drożdżówka z kremem i świeżymi truskawkami" },
           { "src": "/img/kanapki.jpg", "alt": "Kanapka wegetariańska z buraczkiem i rukolą obok mięsnej z kurczakiem — na drewnianej desce" },
           { "src": "/img/kuing-amann.jpg", "alt": "Kuing-amann — karmelizowane ciasto francuskie z widoczną spiralą" },
-          { "src": "/img/drozdowka-rabarbar.jpg", "alt": "Drożdżówka z rabarbarem i kruszonką posypana cukrem pudrem" }
+          { "src": "/img/drozdowka-rabarbar.jpg", "alt": "Drożdżówka z rabarbarem i kruszonką posypana cukrem pudrem" },
+          { "src": "/img/croissant-ser-beszamel.jpg", "alt": "Croissant z serem i beszamelem — zapiekany na złoto" },
+          { "src": "/img/drozdowka-ziemniak.jpg", "alt": "Drożdżówka ziemniak tymianek z pieczoną papryką i mozzarellą" }
         ]
       }
     },
