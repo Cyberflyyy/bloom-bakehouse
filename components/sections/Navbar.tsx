@@ -40,7 +40,7 @@ export default function Navbar({
     return () => { document.body.style.overflow = ""; };
   }, [open]);
 
-  const positionClass = behavior === "static" ? "relative" : "sticky top-0 z-50";
+  const positionClass = behavior === "static" ? "relative" : "fixed top-0 left-0 right-0 z-50";
   const bgClass = transparent
     ? "bg-transparent"
     : "backdrop-blur supports-[backdrop-filter]:bg-[var(--color-bg)]/85 bg-[var(--color-bg)] shadow-[0_1px_0_0_color-mix(in_srgb,var(--color-text)_8%,transparent)]";
@@ -138,39 +138,44 @@ export default function Navbar({
     );
   }
 
-  return (
-    <header className={`${positionClass} ${bgClass} transition-colors duration-300`}>
-      <nav className="container">{inner}</nav>
+  const isFixed = behavior !== "static";
 
-      {/* Panel mobilny — rozwija się pod sticky headerem */}
-      <div
-        className={`md:hidden overflow-hidden transition-[max-height] duration-300 ease-out ${open ? "max-h-[80vh]" : "max-h-0"}`}
-        style={{ background: "var(--color-bg)" }}
-      >
-        <div className="container py-4 flex flex-col gap-1 border-t" style={{ borderColor: "color-mix(in srgb, var(--color-text) 10%, transparent)" }}>
-          {links.map((l) => (
-            <a
-              key={l}
-              href={slugify(l)}
-              onClick={() => setOpen(false)}
-              className="py-3 text-base font-medium border-b last:border-b-0"
-              style={{ color: "var(--color-text)", borderColor: "color-mix(in srgb, var(--color-text) 7%, transparent)" }}
-            >
-              {l}
-            </a>
-          ))}
-          {cta === "phone" && phone && (
-            <a href={`tel:${phone.replace(/\s+/g, "")}`} onClick={() => setOpen(false)} className="btn btn--solid w-full mt-3">
-              Zadzwoń: {phone}
-            </a>
-          )}
-          {cta === "button" && (
-            <a href="#kontakt" onClick={() => setOpen(false)} className="btn btn--solid w-full mt-3">
-              Skontaktuj się
-            </a>
-          )}
+  return (
+    <>
+      {isFixed && <div className="h-[57px] md:h-[65px]" />}
+      <header className={`${positionClass} ${bgClass} transition-colors duration-300`}>
+        <nav className="container">{inner}</nav>
+
+        {/* Panel mobilny — rozwija się pod fixed headerem */}
+        <div
+          className={`md:hidden overflow-hidden transition-[max-height] duration-300 ease-out ${open ? "max-h-[80vh]" : "max-h-0"}`}
+          style={{ background: "var(--color-bg)" }}
+        >
+          <div className="container py-4 flex flex-col gap-1 border-t" style={{ borderColor: "color-mix(in srgb, var(--color-text) 10%, transparent)" }}>
+            {links.map((l) => (
+              <a
+                key={l}
+                href={slugify(l)}
+                onClick={() => setOpen(false)}
+                className="py-3 text-base font-medium border-b last:border-b-0"
+                style={{ color: "var(--color-text)", borderColor: "color-mix(in srgb, var(--color-text) 7%, transparent)" }}
+              >
+                {l}
+              </a>
+            ))}
+            {cta === "phone" && phone && (
+              <a href={`tel:${phone.replace(/\s+/g, "")}`} onClick={() => setOpen(false)} className="btn btn--solid w-full mt-3">
+                Zadzwoń: {phone}
+              </a>
+            )}
+            {cta === "button" && (
+              <a href="#kontakt" onClick={() => setOpen(false)} className="btn btn--solid w-full mt-3">
+                Skontaktuj się
+              </a>
+            )}
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 }
