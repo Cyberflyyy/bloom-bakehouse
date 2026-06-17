@@ -20,6 +20,8 @@
         "name": "BLOOM Bakehouse",
         "links": [
           "O nas",
+          "Cennik",
+          "Galeria",
           "Godziny",
           "Kontakt"
         ],
@@ -92,6 +94,71 @@
       }
     },
     {
+      "type": "PriceList",
+      "props": {
+        "layout": "categories",
+        "withDesc": true,
+        "heading": "Co dziś na ladzie?",
+        "categories": [
+          {
+            "category": "Piekarnia",
+            "items": [
+              { "name": "Croissant klasyczny", "price": "11 zł" },
+              { "name": "Croissant kawowy", "price": "18 zł" },
+              { "name": "Pain au chocolat", "price": "13 zł" },
+              { "name": "Pain au chocolat migdałowy", "price": "18 zł" },
+              { "name": "Bloom", "price": "21 zł", "desc": "Zapytaj o aktualny smak" },
+              { "name": "Ślimak pomarańcza", "price": "12 zł" },
+              { "name": "Pain suisse rabarbar", "price": "19 zł" },
+              { "name": "Bostock", "price": "16 zł", "desc": "Zapytaj o smaki" },
+              { "name": "Drożdżówka ziemniak tymianek", "price": "11 zł" },
+              { "name": "Croissant ser beszamel", "price": "13 zł" },
+              { "name": "Chlebek tostowy", "price": "15 zł" },
+              { "name": "Chleb pszenno-żytni", "price": "14 zł" },
+              { "name": "Kanapka mięsna", "price": "18 zł", "desc": "Zapytaj o smaki" },
+              { "name": "Kanapka wegetariańska", "price": "16 zł", "desc": "Zapytaj o smaki" }
+            ]
+          },
+          {
+            "category": "Kawa",
+            "items": [
+              { "name": "Espresso", "price": "10 zł" },
+              { "name": "Americano", "price": "13 zł" },
+              { "name": "Przelew", "price": "15 zł" },
+              { "name": "Cappuccino", "price": "15 zł" },
+              { "name": "Latte", "price": "17 zł" },
+              { "name": "Matcha latte", "price": "18 zł" }
+            ]
+          },
+          {
+            "category": "Herbata i extras",
+            "items": [
+              { "name": "Dzbanek herbaty", "price": "18 zł", "desc": "Zapytaj obsługę o dostępne rodzaje" },
+              { "name": "Extra shot", "price": "2 zł" },
+              { "name": "Mleko", "price": "—", "desc": "Krowie i roślinne — zapytaj obsługę" }
+            ]
+          }
+        ],
+        "note": "Własny kubek = zniżka 10%. Na miejscu, na wynos — jak wolisz."
+      }
+    },
+    {
+      "type": "Gallery",
+      "props": {
+        "layout": "masonry",
+        "heading": "Prosto z pieca",
+        "images": [
+          { "src": "/img/pain-au-chocolat.jpg", "alt": "Pain au chocolat — croissant czekoladowy z widocznymi warstwami ciasta" },
+          { "src": "/img/taca-wypieki.jpg", "alt": "Taca pełna świeżych wypieków BLOOM — croissanty, bostock, pain suisse i drożdżówka" },
+          { "src": "/img/bloom-wisnia.jpg", "alt": "Bloom wiśnia pistacja — firmowy wypiek z kremem pistacjowym w kształcie kwiatka" },
+          { "src": "/img/drozdowka-truskawka.jpg", "alt": "Drożdżówka z kremem i świeżymi truskawkami" },
+          { "src": "/img/kanapki.jpg", "alt": "Kanapka wegetariańska z buraczkiem i rukolą obok mięsnej z kurczakiem — na drewnianej desce" },
+          { "src": "/img/kuing-amann.jpg", "alt": "Kuing-amann — karmelizowane ciasto francuskie z widoczną spiralą" },
+          { "src": "/img/drozdowka-rabarbar.jpg", "alt": "Drożdżówka z rabarbarem i kruszonką posypana cukrem pudrem" }
+        ]
+      }
+    },
+    {
       "type": "Hours",
       "props": {
         "layout": "card-with-status",
@@ -148,7 +215,7 @@
   },
   "site": {
     "slug": "bloom-bakehouse",
-    "url": "https://bloom-bakehouse.vercel.app"
+    "url": "https://bloom-bakehouse-one.vercel.app"
   },
   "leads": {
     "supabaseUrl": "https://xoyxyhwyglkllsqtaycf.supabase.co",
